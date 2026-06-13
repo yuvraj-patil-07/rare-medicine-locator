@@ -186,7 +186,7 @@ const PharmacyReservations = () => {
                   <h4 className="font-semibold text-surface-500">Prescription Verification</h4>
                   {res.prescription ? (
                     <a
-                      href={`http://localhost:5000${res.prescription}`}
+                      href={res.prescription}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 p-2 rounded-xl bg-primary-50 dark:bg-primary-950/20 text-primary-600 dark:text-primary-400 border border-primary-100 dark:border-primary-900/50 hover:bg-primary-100/50 transition-colors mt-1"

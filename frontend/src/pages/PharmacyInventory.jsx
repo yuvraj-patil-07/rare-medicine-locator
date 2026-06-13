@@ -119,7 +119,7 @@ const PharmacyInventory = () => {
     setExpiryDate(med.expiryDate ? med.expiryDate.split('T')[0] : '');
     setBatchNumber(med.batchNumber || '');
     setImage(null);
-    setImagePreview(med.image ? `http://localhost:5000${med.image}` : '');
+    setImagePreview(med.image ? med.image : '');
     setIsModalOpen(true);
   };
 
@@ -279,7 +279,7 @@ const PharmacyInventory = () => {
                       <div className="flex items-center gap-3">
                         <div className="w-12 h-12 rounded-xl bg-surface-100 dark:bg-surface-800 flex items-center justify-center overflow-hidden flex-shrink-0">
                           {med.image ? (
-                            <img src={`http://localhost:5000${med.image}`} alt={med.name} className="w-full h-full object-cover" />
+                            <img src={med.image} alt={med.name} className="w-full h-full object-cover" />
                           ) : (
                             <span className="text-surface-400 text-xs">No image</span>
                           )}

@@ -67,7 +67,7 @@ const PharmacyProfile = () => {
         setLongitude(p.location?.coordinates?.[0] || '');
         setDeliveryAvailable(p.deliveryAvailable || false);
         setEmergencyAvailable(p.emergencyAvailable || false);
-        setImagePreview(p.image ? `http://localhost:5000${p.image}` : '');
+        setImagePreview(p.image ? p.image : '');
         
         if (p.operatingHours) {
           setOperatingHours(p.operatingHours);

@@ -1,0 +1,16 @@
+{
+  "name": "Rare Medicine Locator",
+  "short_name": "MedLocator",
+  "description": "Find rare medicines at nearby pharmacies instantly",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#4f46e5",
+  "background_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -21,7 +21,7 @@ const Notifications = () => {
   const fetchNotifications = async () => {
     try {
       const { data } = await notificationService.getAll();
-      setNotifications(data.data);
+      setNotifications(data?.data?.notifications || []);
     } catch (error) {
       toast.error('Failed to load notifications');
     } finally {

@@ -1,7 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import Navbar from './components/common/Navbar';
-import Footer from './components/common/Footer';
 import ProtectedRoute from './components/common/ProtectedRoute';
 import DashboardLayout from './components/dashboard/DashboardLayout';
 
@@ -71,7 +70,6 @@ function App() {
 
         </Routes>
       </main>
-      <Footer />
       
       <Toaster 
         position="bottom-right"

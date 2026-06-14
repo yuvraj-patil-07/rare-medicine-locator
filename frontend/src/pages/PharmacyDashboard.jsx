@@ -2,18 +2,6 @@ import { useState, useEffect } from 'react';
 import pharmacyService from '../services/pharmacyService';
 import reservationService from '../services/reservationService';
 import LoadingSkeleton from '../components/common/LoadingSkeleton';
-import { 
-  HiOutlineCurrencyRupee, 
-  HiOutlineClipboardList, 
-  HiOutlineClock, 
-  HiOutlineStar, 
-  HiOutlineShoppingBag,
-  HiCheck,
-  HiX,
-  HiMail,
-  HiPhone,
-  HiExclamation
-} from 'react-icons/io5'; // Using consistent Io5/Hi icons. Let's make sure we import from react-icons/hi as used elsewhere.
 import { HiOutlineCurrencyRupee as IconRupee, HiOutlineClipboardList as IconList, HiOutlineClock as IconClock, HiOutlineStar as IconStar, HiCheck as IconCheck, HiX as IconX, HiMail as IconMail, HiPhone as IconPhone, HiExclamation as IconExclamation, HiOutlineShoppingBag as IconBag } from 'react-icons/hi';
 import toast from 'react-hot-toast';
 import { formatDate } from '../utils/helpers';

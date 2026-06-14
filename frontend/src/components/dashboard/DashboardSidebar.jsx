@@ -5,7 +5,10 @@ import {
   HiOutlineClipboardList, 
   HiOutlineUsers, 
   HiOutlineChartBar, 
-  HiOutlineCog 
+  HiOutlineCog,
+  HiOutlineUser,
+  HiOutlineHeart,
+  HiOutlineDocumentText
 } from 'react-icons/hi';
 import { useAuth } from '../../context/AuthContext';
 
@@ -25,9 +28,17 @@ const DashboardSidebar = () => {
     { to: '/pharmacy/inventory', icon: HiOutlineClipboardList, label: 'Inventory' },
     { to: '/pharmacy/reservations', icon: HiOutlineShoppingBag, label: 'Reservations' },
     { to: '/pharmacy/profile', icon: HiOutlineCog, label: 'Settings' },
+    { to: '/pharmacy/requests', icon: HiOutlineDocumentText, label: 'Patient Requests' }, // Allow pharmacies to view and fulfill requests!
   ];
 
-  const links = isAdmin ? adminLinks : isPharmacy ? pharmacyLinks : [];
+  const userLinks = [
+    { to: '/profile', icon: HiOutlineUser, label: 'My Profile' },
+    { to: '/reservations', icon: HiOutlineShoppingBag, label: 'My Reservations' },
+    { to: '/favorites', icon: HiOutlineHeart, label: 'Favorites' },
+    { to: '/requests', icon: HiOutlineDocumentText, label: 'Medicine Requests' },
+  ];
+
+  const links = isAdmin ? adminLinks : isPharmacy ? pharmacyLinks : userLinks;
 
   return (
     <div className="w-64 glass-card h-[calc(100vh-6rem)] sticky top-24 overflow-y-auto hidden md:block">

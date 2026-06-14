@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { HiMenu, HiX, HiSearch, HiBell, HiUser, HiLogout, HiHeart, HiClipboardList, HiCog, HiViewGrid, HiOutlineShoppingBag } from 'react-icons/hi';
+import { HiMenu, HiX, HiSearch, HiBell, HiUser, HiLogout, HiHeart, HiClipboardList, HiCog, HiViewGrid, HiOutlineShoppingBag, HiOutlineDocumentText } from 'react-icons/hi';
 import { useAuth } from '../../context/AuthContext';
 import { useTheme } from '../../context/ThemeContext';
 import { useNotifications } from '../../context/NotificationContext';
@@ -153,6 +153,10 @@ const Navbar = () => {
                             <Link to="/reservations" onClick={() => setShowProfile(false)} className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-surface-100 dark:hover:bg-surface-800 transition-colors text-sm">
                               <HiClipboardList className="w-4 h-4" />
                               Reservations
+                            </Link>
+                            <Link to="/requests" onClick={() => setShowProfile(false)} className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-surface-100 dark:hover:bg-surface-800 transition-colors text-sm">
+                              <HiOutlineDocumentText className="w-4 h-4" />
+                              Medicine Requests
                             </Link>
                           </>
                         )}

@@ -19,6 +19,8 @@ import PharmacyDashboard from './pages/PharmacyDashboard';
 import PharmacyInventory from './pages/PharmacyInventory';
 import PharmacyReservations from './pages/PharmacyReservations';
 import PharmacyProfile from './pages/PharmacyProfile';
+import Requests from './pages/Requests';
+import PharmacyRequests from './pages/PharmacyRequests';
 import AdminDashboard from './pages/AdminDashboard';
 import AdminPharmacies from './pages/AdminPharmacies';
 import AdminUsers from './pages/AdminUsers';
@@ -46,6 +48,7 @@ function App() {
             <Route path="favorites" element={<Favorites />} />
             <Route path="reservations" element={<Reservations />} />
             <Route path="notifications" element={<Notifications />} />
+            <Route path="requests" element={<Requests />} />
           </Route>
 
           {/* Pharmacy Routes */}
@@ -54,6 +57,7 @@ function App() {
             <Route path="inventory" element={<PharmacyInventory />} />
             <Route path="reservations" element={<PharmacyReservations />} />
             <Route path="profile" element={<PharmacyProfile />} />
+            <Route path="requests" element={<PharmacyRequests />} />
           </Route>
 
           {/* Admin Routes */}

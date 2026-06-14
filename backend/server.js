@@ -20,6 +20,7 @@ const reviewRoutes = require('./routes/reviewRoutes');
 const notificationRoutes = require('./routes/notificationRoutes');
 const favoriteRoutes = require('./routes/favoriteRoutes');
 const adminRoutes = require('./routes/adminRoutes');
+const requestRoutes = require('./routes/requestRoutes');
 
 // Initialize Express
 const app = express();
@@ -80,6 +81,7 @@ app.use('/api/reviews', reviewRoutes);
 app.use('/api/notifications', notificationRoutes);
 app.use('/api/favorites', favoriteRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/api/requests', requestRoutes);
 
 // Error handling
 app.use(notFound);

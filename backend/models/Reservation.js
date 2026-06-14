@@ -76,6 +76,11 @@ reservationSchema.virtual('isExpired').get(function () {
   return this.status === 'pending' && new Date() > this.expiresAt;
 });
 
+// Virtual: Map prescriptionImage to prescription for consistency
+reservationSchema.virtual('prescription').get(function () {
+  return this.prescriptionImage;
+});
+
 // Auto-expire pending reservations
 reservationSchema.pre('find', function () {
   // This is handled via a scheduled check in the controller

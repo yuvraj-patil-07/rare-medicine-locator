@@ -216,7 +216,7 @@ const PharmacyProfile = () => {
                 type="text"
                 required
                 className="input-field"
-                placeholder="e.g. Apex Pharmacy & Wellness"
+                placeholder="Enter pharmacy name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
@@ -228,7 +228,7 @@ const PharmacyProfile = () => {
                 type="text"
                 required
                 className="input-field"
-                placeholder="e.g. DL-12345-XYZ"
+                placeholder="Enter drug license number"
                 value={license}
                 onChange={(e) => setLicense(e.target.value)}
               />
@@ -239,7 +239,7 @@ const PharmacyProfile = () => {
               <textarea
                 rows={3}
                 className="input-field py-3"
-                placeholder="Tell patients about your specialty medicines, services, etc..."
+                placeholder="Describe pharmacy services, specialty medicines, availability..."
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
               />
@@ -281,7 +281,7 @@ const PharmacyProfile = () => {
                 type="tel"
                 required
                 className="input-field"
-                placeholder="+91 22 2642 2200"
+                placeholder="Enter contact phone number"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
               />
@@ -293,7 +293,7 @@ const PharmacyProfile = () => {
                 type="email"
                 required
                 className="input-field"
-                placeholder="contact@pharmacy.com"
+                placeholder="Enter contact email address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -304,7 +304,7 @@ const PharmacyProfile = () => {
               <input
                 type="url"
                 className="input-field"
-                placeholder="https://pharmacy.com"
+                placeholder="Enter website URL (optional)"
                 value={website}
                 onChange={(e) => setWebsite(e.target.value)}
               />
@@ -326,7 +326,7 @@ const PharmacyProfile = () => {
                 type="text"
                 required
                 className="input-field"
-                placeholder="Shop 4, Hill Road, Bandra West"
+                placeholder="Enter street name, building number"
                 value={street}
                 onChange={(e) => setStreet(e.target.value)}
               />
@@ -338,7 +338,7 @@ const PharmacyProfile = () => {
                 type="text"
                 required
                 className="input-field"
-                placeholder="Mumbai"
+                placeholder="Enter city"
                 value={city}
                 onChange={(e) => setCity(e.target.value)}
               />
@@ -350,7 +350,7 @@ const PharmacyProfile = () => {
                 type="text"
                 required
                 className="input-field"
-                placeholder="Maharashtra"
+                placeholder="Enter state"
                 value={state}
                 onChange={(e) => setState(e.target.value)}
               />
@@ -362,7 +362,7 @@ const PharmacyProfile = () => {
                 type="text"
                 required
                 className="input-field"
-                placeholder="400050"
+                placeholder="Enter ZIP/PIN code"
                 value={zipCode}
                 onChange={(e) => setZipCode(e.target.value)}
               />
@@ -376,7 +376,7 @@ const PharmacyProfile = () => {
                 step="any"
                 required
                 className="input-field"
-                placeholder="e.g. 19.0583"
+                placeholder="Enter latitude coordinate"
                 value={latitude}
                 onChange={(e) => setLatitude(e.target.value)}
               />
@@ -389,7 +389,7 @@ const PharmacyProfile = () => {
                 step="any"
                 required
                 className="input-field"
-                placeholder="e.g. 72.8286"
+                placeholder="Enter longitude coordinate"
                 value={longitude}
                 onChange={(e) => setLongitude(e.target.value)}
               />

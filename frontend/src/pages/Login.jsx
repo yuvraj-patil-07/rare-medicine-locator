@@ -67,7 +67,7 @@ const Login = () => {
                   pattern: { value: /^\S+@\S+$/i, message: 'Invalid email address' }
                 })}
                 className="input-field pl-10"
-                placeholder="you@example.com"
+                placeholder="Enter your email address"
               />
             </div>
             {errors.email && <p className="mt-1 text-xs text-red-500">{errors.email.message}</p>}
@@ -86,7 +86,7 @@ const Login = () => {
                 type={showPassword ? 'text' : 'password'}
                 {...register('password', { required: 'Password is required' })}
                 className="input-field pl-10 pr-10"
-                placeholder="••••••••"
+                placeholder="Enter your password"
               />
               <button
                 type="button"

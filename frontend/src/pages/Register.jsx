@@ -79,7 +79,7 @@ const Register = () => {
                 type="text"
                 {...registerForm('name', { required: 'Name is required' })}
                 className="input-field pl-10"
-                placeholder="John Doe"
+                placeholder="Enter your full name"
               />
             </div>
             {errors.name && <p className="mt-1 text-xs text-red-500">{errors.name.message}</p>}
@@ -98,7 +98,7 @@ const Register = () => {
                   pattern: { value: /^\S+@\S+$/i, message: 'Invalid email address' }
                 })}
                 className="input-field pl-10"
-                placeholder="you@example.com"
+                placeholder="Enter your email address"
               />
             </div>
             {errors.email && <p className="mt-1 text-xs text-red-500">{errors.email.message}</p>}
@@ -114,7 +114,7 @@ const Register = () => {
                 type="tel"
                 {...registerForm('phone')}
                 className="input-field pl-10"
-                placeholder="+1 234 567 8900"
+                placeholder="Enter your phone number (optional)"
               />
             </div>
           </div>
@@ -132,7 +132,7 @@ const Register = () => {
                   minLength: { value: 8, message: 'Password must be at least 8 characters' }
                 })}
                 className="input-field pl-10 pr-10"
-                placeholder="••••••••"
+                placeholder="Enter a secure password (min 8 chars)"
               />
               <button
                 type="button"
@@ -157,7 +157,7 @@ const Register = () => {
                   validate: value => value === password || 'Passwords do not match'
                 })}
                 className="input-field pl-10"
-                placeholder="••••••••"
+                placeholder="Confirm your password"
               />
             </div>
             {errors.confirmPassword && <p className="mt-1 text-xs text-red-500">{errors.confirmPassword.message}</p>}

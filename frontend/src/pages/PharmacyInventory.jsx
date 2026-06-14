@@ -356,7 +356,7 @@ const PharmacyInventory = () => {
                     type="text"
                     required
                     className="input-field"
-                    placeholder="e.g. Remdesivir 100mg Injection"
+                    placeholder="Enter medicine name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                   />
@@ -367,7 +367,7 @@ const PharmacyInventory = () => {
                   <input
                     type="text"
                     className="input-field"
-                    placeholder="e.g. Remdesivir"
+                    placeholder="Enter generic active ingredient"
                     value={genericName}
                     onChange={(e) => setGenericName(e.target.value)}
                   />
@@ -378,7 +378,7 @@ const PharmacyInventory = () => {
                   <input
                     type="text"
                     className="input-field"
-                    placeholder="e.g. Covir"
+                    placeholder="Enter commercial brand name"
                     value={brand}
                     onChange={(e) => setBrand(e.target.value)}
                   />
@@ -389,7 +389,7 @@ const PharmacyInventory = () => {
                   <input
                     type="text"
                     className="input-field"
-                    placeholder="e.g. Cipla Ltd"
+                    placeholder="Enter manufacturer name"
                     value={manufacturer}
                     onChange={(e) => setManufacturer(e.target.value)}
                   />
@@ -427,7 +427,7 @@ const PharmacyInventory = () => {
                     type="text"
                     required
                     className="input-field"
-                    placeholder="e.g. 100mg, 500mg/mL"
+                    placeholder="Enter strength specification"
                     value={strength}
                     onChange={(e) => setStrength(e.target.value)}
                   />
@@ -440,7 +440,7 @@ const PharmacyInventory = () => {
                     min="0"
                     required
                     className="input-field"
-                    placeholder="Price in Rupees"
+                    placeholder="Enter price in Rupees"
                     value={price}
                     onChange={(e) => setPrice(e.target.value)}
                   />
@@ -453,7 +453,7 @@ const PharmacyInventory = () => {
                     min="0"
                     required
                     className="input-field"
-                    placeholder="e.g. 12"
+                    placeholder="Enter stock quantity"
                     value={stock}
                     onChange={(e) => setStock(e.target.value)}
                   />
@@ -476,7 +476,7 @@ const PharmacyInventory = () => {
                   <input
                     type="text"
                     className="input-field"
-                    placeholder="e.g. B-987X"
+                    placeholder="Enter batch code"
                     value={batchNumber}
                     onChange={(e) => setBatchNumber(e.target.value)}
                   />
@@ -497,7 +497,7 @@ const PharmacyInventory = () => {
                   <textarea
                     rows={3}
                     className="input-field py-3"
-                    placeholder="Enter medicine indication, package details, etc..."
+                    placeholder="Describe indications, instructions, or packaging details..."
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
                   />
@@ -508,7 +508,7 @@ const PharmacyInventory = () => {
                   <input
                     type="text"
                     className="input-field"
-                    placeholder="e.g. Nausea, Headache (comma separated)"
+                    placeholder="Enter potential side effects (comma separated)"
                     value={sideEffects}
                     onChange={(e) => setSideEffects(e.target.value)}
                   />
@@ -519,7 +519,7 @@ const PharmacyInventory = () => {
                   <input
                     type="text"
                     className="input-field"
-                    placeholder="e.g. Renal impairment (comma separated)"
+                    placeholder="Enter contraindications (comma separated)"
                     value={contraindications}
                     onChange={(e) => setContraindications(e.target.value)}
                   />
